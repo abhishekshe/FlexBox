@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel= "short icon" href= "../assets/html.jpg">
+        <title>Demo FlexBox</title>  
+        <style>
+           
+            .head{
+                display: flex;
+                flex-flow:row wrap;
+                align-content: center;
+                justify-content: flex-start;
+            }
+            .secondIteration{
+                display:flex;
+                flex-flow:column wrap;
+                flex:4 0 0;
+            }
+            .headerContainer{
+                background-color: tomato;
+                font-weight:bold;
+                padding:10px;
+
+            }
+            .footerContainer{
+                display:flex;
+                background: lightgreen;
+                font-weight: bold;
+                padding: 10px;
+                flex:1 0 0;
+            }
+            .sideBar{background:gold; flex:1 0 0;}
+            .sideBarRightItem{background:hotpink;flex:1 0 0;}
+            .container{
+                display:flex;
+                flex-flow:row wrap;
+            }
+            .subContainer
+            {
+                display:flex;
+                flex-flow: column wrap;
+                flex:3 0 0;
+            }
+            .mainContentItem{
+                text-align:left;
+                background:deepskyblue;
+                flex:3 0 0;
+            }
+            article{
+                padding:10px;
+                margin:10px;
+                background:aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <div class ="head">
+        <sideBar class="sideBar"><div class="center"><p style= "text-align:center">Left Side Bar</p></div></sideBar>
+        <div class = "secondIteration">
+            <header class="headerContainer"><h1>Welcome to BridgeLabz</h1></header>
+            <div class= "container">
+                <div class= "subContainer">
+                     <section class= "mainContentItem">
+                        <article >
+                                <h2>BridgeLabz</h2>
+                                <p>BridgeLabz secure your dream job and enjoy learning different technology</p>
+                        </article>
+                                
+                        <article >
+                                <h2>BridgeLabz technologies</h2>
+                                <p>we can learn C#, python, html, css, javascript, java from BridgeLabz</p>
+                        </article>
+                                
+                       
+                    </section>
+                    <footer class= "footerContainer">Footer</footer>
+                </div>
+                <sideBar class="sideBarRightItem"><div class="center"><p style= "text-align:center";>Right Side Bar</p></div></sideBar>
+            </div>
+            
+        </div>
+    </body>
+</html>
